@@ -9,6 +9,7 @@
       margin: 0;
       background: #f4f4f4;
     }
+
     header {
       background: white;
       padding: 1.5rem 2rem;
@@ -17,34 +18,60 @@
       align-items: center;
       border-bottom: 1px solid #ddd;
     }
+
     .logo {
       display: flex;
       align-items: baseline;
       gap: 0.5rem;
     }
-    .logo .latin { color: red; font-size: 2rem; font-weight: 700; }
-    .logo .arabic { color: black; font-size: 1.3rem; }
+
+    .logo .latin { 
+      color: red; 
+      font-size: 2rem; 
+      font-weight: 700; 
+    }
+
+    .logo .arabic { 
+      color: black; 
+      font-size: 1.3rem; 
+    }
+
     nav a {
       margin-left: 1.5rem;
       text-decoration: none;
       color: #222;
       font-weight: 500;
+      transition: color 0.3s;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Marker hvilken side man er på */
+    nav a.active {
+      color: red;
+      font-weight: 700;
+    }
+
     main {
       max-width: 1000px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
+
     section {
       background: white;
       padding: 2rem;
       border-radius: 8px;
     }
+
     img {
       width: 100%;
       margin-top: 1.5rem;
       border-radius: 8px;
     }
+
     footer {
       text-align: center;
       margin-top: 3rem;
@@ -57,16 +84,17 @@
 
 <header>
   <a href="index.html" class="logo" style="text-decoration: none;">
-  <span class="latin">SamecoPlas</span>
-  <span class="arabic">السروجي</span>
-</a>
+    <span class="latin">SamecoPlas</span>
+    <span class="arabic">السروجي</span>
+  </a>
+
   <nav>
-  <a href="index.html">Forside</a>
-  <a href="produkter.html">Produkter</a>
-  <a href="om-os.html" class="active">Om os</a>
-  <a href="levering.html">Levering</a>
-  <a href="kontakt.html">Kontakt</a>
-</nav>
+    <a href="index.html">Forside</a>
+    <a href="produkter.html">Produkter</a>
+    <a href="om-os.html" class="active">Om os</a>
+    <a href="levering.html">Levering</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
 </header>
 
 <main>
@@ -76,7 +104,7 @@
       SamecoPlas er en virksomhed med fokus på kvalitet, pålidelighed og gode løsninger.
       Denne tekst kan du senere ændre til jeres rigtige historie.
     </p>
-    <img src="https://picsum.photos/id/1039/1000/402" alt="Plastik ekstruder">
+    <img src="https://images.unsplash.com/photo-1581091870621-c2d7cd341056?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1000" alt="Plastik ekstruder">
   </section>
 </main>
 
